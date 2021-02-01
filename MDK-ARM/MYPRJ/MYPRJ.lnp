@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"myprj\startup_stm32f103xe.o"
+"myprj\main.o"
+"myprj\gpio.o"
+"myprj\dac.o"
+"myprj\stm32f1xx_it.o"
+"myprj\stm32f1xx_hal_msp.o"
+"myprj\stm32f1xx_hal_gpio_ex.o"
+"myprj\stm32f1xx_hal_dac.o"
+"myprj\stm32f1xx_hal_dac_ex.o"
+"myprj\stm32f1xx_hal.o"
+"myprj\stm32f1xx_hal_rcc.o"
+"myprj\stm32f1xx_hal_rcc_ex.o"
+"myprj\stm32f1xx_hal_gpio.o"
+"myprj\stm32f1xx_hal_dma.o"
+"myprj\stm32f1xx_hal_cortex.o"
+"myprj\stm32f1xx_hal_pwr.o"
+"myprj\stm32f1xx_hal_flash.o"
+"myprj\stm32f1xx_hal_flash_ex.o"
+"myprj\stm32f1xx_hal_exti.o"
+"myprj\stm32f1xx_hal_tim.o"
+"myprj\stm32f1xx_hal_tim_ex.o"
+"myprj\system_stm32f1xx.o"
+"myprj\oled.o"
+--library_type=microlib --strict --scatter "MYPRJ\MYPRJ.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MYPRJ.map" -o MYPRJ\MYPRJ.axf
